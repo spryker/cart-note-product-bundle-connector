@@ -12,9 +12,6 @@ use Spryker\Client\Kernel\AbstractFactory;
 
 class CartNoteProductBundleConnectorFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Client\CartNoteProductBundleConnector\Dependency\Client\CartNoteProductBundleConnectorToProductBundleClientInterface
-     */
     public function getProductBundleClient(): CartNoteProductBundleConnectorToProductBundleClientInterface
     {
         return $this->getProvidedDependency(CartNoteProductBundleConnectorDependencyProvider::CLIENT_PRODUCT_BUNDLE);

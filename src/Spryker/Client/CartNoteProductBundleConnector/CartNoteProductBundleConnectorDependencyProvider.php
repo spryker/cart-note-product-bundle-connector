@@ -30,11 +30,6 @@ class CartNoteProductBundleConnectorDependencyProvider extends AbstractDependenc
         return $container;
     }
 
-    /**
-     * @param \Spryker\Client\Kernel\Container $container
-     *
-     * @return \Spryker\Client\Kernel\Container
-     */
     protected function addProductBundleClient(Container $container): Container
     {
         $container->set(static::CLIENT_PRODUCT_BUNDLE, function (Container $container) {
